@@ -1,0 +1,9 @@
+:host{
+    margin-top: 8vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    justify-content: center !important;
+}
