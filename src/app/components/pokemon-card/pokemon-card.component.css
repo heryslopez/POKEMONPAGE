@@ -1,9 +1,9 @@
 .pokemon-card{
-    font-family: "Flexo-Bold",arial,sans-serif;
-    margin: 5px;
-    /* display: flex;
-    flex-direction: column;
-    place-items: center; */
+    display: flex;
+	flex-direction: column;
+	font-family: "Signika", arial, sans-serif;
+	margin: 0 5px 50px;
+	width: 215px;
 }
 .pokemon-images{
     background: #F2F2F2;
@@ -11,19 +11,26 @@
     margin: 0 .78125% 15px;
 }
 .pokemon-card-number{
-    font-family: "Flexo-Bold",arial,sans-serif;
+	color: #919191;
+    font-size: 80%;
+    padding-top: 2px;
+    /* font-family: "Flexo-Bold",arial,sans-serif;
     color: #919191;
     font-size: 80%;
     padding-top: 2px;
-    padding: 0 10px;
+    padding: 0 10px; */
 }
 .pokemon-card-name h5{
-    font-family: "Flexo-Demi",arial,sans-serif;
+	color: #313131;
+    font-size: 145%;
+    margin: 0.5em 0 5px;
+    text-transform: capitalize
+    /* font-family: "Flexo-Demi",arial,sans-serif;
     color: #313131;
     text-transform: none;
     font-size: 115%;
     margin-bottom: 5px;
-    padding: 0 10px;
+    padding: 0 10px; */
 }
 .pokemon-card-types{
     display: flex;

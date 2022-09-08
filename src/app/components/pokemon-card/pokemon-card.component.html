@@ -1,23 +1,16 @@
-<!-- <p style="margin-top: 8vw;">pokemon-card works!</p> -->
-<div class="pokemon-card">
-<diV class="pokemon-card-images">
-<img class="pokemon-images" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="pokemo-image">
-</diV>
-<div class="pokemon-card-number">
-    Nº {{ leadingZero(pokemon.number)}}
-</div>
-<div class="pokemon-card-name">
-    <h5>{{ pokemon.name }}</h5>
-</div>
-<div class="pokemon-card-types">
-    <div class="pokemon-card-type" 
-    *ngFor="let type of pokemon.types">
-    <span [class]="'background-color-' + type.toLowerCase()"> {{ type }} </span>
-        <!-- <span class="background-color-grass">grass</span>
-        <span class="background-color-poison">poison</span> -->
+<div class="pokemon-card" *ngIf="pokemon">
+    <diV class="pokemon-card-image">
+        <img class="pokemon-images" [src]="pokemon.image" alt="pokemo-image">
+    </diV>
+    <div class="pokemon-card-number">
+        Nº {{ leadingZero(pokemon.number)}}
     </div>
-    <!-- <div class="pokemon-card-type">
-        
-    </div> -->
-</div>
+    <div class="pokemon-card-name">
+        <h5>{{ pokemon.name }}</h5>
+    </div>
+    <div class="pokemon-card-types">
+        <div class="pokemon-card-type" *ngFor="let type of pokemon.types">
+            <span [class]="'background-color-' + type.toLowerCase()"> {{ type }} </span>
+        </div>
+    </div>
 </div>
