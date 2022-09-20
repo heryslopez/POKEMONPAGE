@@ -1,22 +1,18 @@
 import { Component} from '@angular/core';
 import { PokemonService } from 'src/services/pokemon.service';
 import { Pokemon } from 'src/_model/Pokemon';
-import { Type } from 'src/_model/Type';
 
 @Component({
-  selector: 'app-pokemon-list',
-  templateUrl: './pokemon-list.component.html',
-  styleUrls: ['./pokemon-list.component.css']
+  selector: 'app-pokemon-details',
+  templateUrl: './pokemon-details.component.html',
+  styleUrls: ['./pokemon-details.component.css']
 })
-export class PokemonListComponent{
+export class PokemonDetailsComponent{
   public pokemons: Pokemon[] = [
+
   ];
   constructor(
     public pokemonService: PokemonService,
     ){
   }
 }
-
-
-
-

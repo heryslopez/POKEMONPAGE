@@ -1,63 +1,125 @@
-.pokemon-card{
-    display: flex;
+.pokemon-card {
+	/* display: flex;
 	flex-direction: column;
 	font-family: "Signika", arial, sans-serif;
 	margin: 0 5px 50px;
-	width: 215px;
+	width: 215px; */
+
+	display: flex;
+	flex-direction: column;
+	font-family: "Signika", arial, sans-serif;
+	margin: 0 5px 50px;
+	width: 12vw;
+	/* background: aquamarine; */
+	background: #ffe28c;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px #ccc5b980;
+	/* background-color: #fff; */
+	color: #252422;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 1;
+
 }
-.pokemon-images{
-    background: #F2F2F2;
-    border-radius: 5px;
-    margin: 0 .78125% 15px;
+
+.container-element {
+	position: relative;
+	left: 5%;
 }
-.pokemon-card-number{
+
+.pokemon-card-image {
+	display: flex;
+	justify-content: center;
+	padding-top: 1vw;
+}
+
+.pokemon-images {
+	background: #F2F2F2;
+	border-radius: 5px;
+	margin: 0 .78125% 15px;
+	width: 10vw;
+
+}
+
+.pokemon-card-number {
 	color: #919191;
-    font-size: 80%;
-    padding-top: 2px;
-    /* font-family: "Flexo-Bold",arial,sans-serif;
+	font-size: 80%;
+	padding-top: 2px;
+	/* font-family: "Flexo-Bold",arial,sans-serif;
     color: #919191;
     font-size: 80%;
     padding-top: 2px;
     padding: 0 10px; */
 }
-.pokemon-card-name h5{
+
+.pokemon-card-name h5 {
 	color: #313131;
-    font-size: 145%;
-    margin: 0.5em 0 5px;
-    text-transform: capitalize
-    /* font-family: "Flexo-Demi",arial,sans-serif;
+	font-size: 145%;
+	margin: 0.5em 0 5px;
+	text-transform: capitalize
+		/* font-family: "Flexo-Demi",arial,sans-serif;
     color: #313131;
     text-transform: none;
     font-size: 115%;
     margin-bottom: 5px;
     padding: 0 10px; */
 }
-.pokemon-card-types{
-    display: flex;
+
+.pokemon-card-types {
+	display: flex;
+	position: relative;
+	right: 4%;
 }
-.pokemon-card-type{
-    font-family: "Flexo-Demi",arial,sans-serif;
-    color: #313131;
-    text-transform: none;
-    font-size: 115%;
-    margin-bottom: 5px;
-    margin: 0 5px;
-    padding: 5px;
+
+.pokemon-card-type {
+	font-family: "Flexo-Demi", arial, sans-serif;
+	color: #313131;
+	text-transform: none;
+	font-size: 115%;
+	margin-bottom: 5px;
+	margin: 0 5px;
+	padding: 5px;
 }
-.pokemon-card-type span{
-    font-family: "Flexo-Medium",arial,sans-serif;
-    border-radius: 3px;
-    line-height: 18px;
-    max-width: 110px;
-    margin: 0 1.5625% 0 0;
-    width: 140%;
-    float: left;
-    text-transform: none;
-    font-size: 11px;
-    text-align: center;
-  
+
+.pokemon-card-type span {
+	font-family: "Flexo-Medium", arial, sans-serif;
+	border-radius: 3px;
+	line-height: 18px;
+	max-width: 110px;
+	margin: 0 1.5625% 0 0;
+	width: 140%;
+	float: left;
+	text-transform: none;
+	font-size: 11px;
+	text-align: center;
+
 }
-  .background-color-bug {
+
+.card-footer {
+	padding: .75rem 1.25rem;
+	padding-bottom: 0.75rem;
+	background-color: transparent !important;
+	border: none !important;
+	padding-bottom: 2em;
+	position: relative;
+	right: 7%;
+}
+
+.btn-rounded[_ngcontent-dtu-c5] {
+	margin: 0 auto;
+	display: flex;
+	padding: 0.2rem 2rem;
+	border-radius: 1.7rem;
+	background-color: #ff635c !important;
+	border: 1px solid #FF635C !important;
+}
+.btn-rounded[_ngcontent-dtu-c5]:hover {
+	background-color: #fff !important;
+	color: #ff635c !important;
+	border: 1px solid #FF635C !important;
+}
+
+.background-color-bug {
 	background: -webkit-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
 	background: -ms-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
 	background: -moz-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
@@ -236,4 +298,3 @@
 	background-color: #4592c4;
 	color: #fff
 }
-

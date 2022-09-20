@@ -2,15 +2,21 @@
     <diV class="pokemon-card-image">
         <img class="pokemon-images" [src]="pokemon.image" alt="pokemo-image">
     </diV>
-    <div class="pokemon-card-number">
-        Nº {{ leadingZero(pokemon.number)}}
-    </div>
-    <div class="pokemon-card-name">
-        <h5>{{ pokemon.name }}</h5>
-    </div>
-    <div class="pokemon-card-types">
-        <div class="pokemon-card-type" *ngFor="let type of pokemon.types">
-            <span [class]="'background-color-' + type.toLowerCase()"> {{ type }} </span>
+    <div class="container-element">
+        <div class="pokemon-card-number">
+            Nº {{ leadingZero(pokemon.number)}}
+        </div>
+        <div class="pokemon-card-name">
+            <h5>{{ pokemon.name }}</h5>
+        </div>
+        <div class="pokemon-card-types">
+            <div class="pokemon-card-type" *ngFor="let type of pokemon.types">
+                <span [class]="'background-color-' + type.toLowerCase()"> {{ type }} </span>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button _ngcontent-dtu-c5="" type="button" class="btn btn-success btn-rounded" tabindex="0">View</button>
         </div>
     </div>
+
 </div>

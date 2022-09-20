@@ -10,7 +10,7 @@ export class PokemonService {
 public pokemons : Pokemon[] = [];
 constructor(private httpClient: HttpClient,)
 {
- const allPokemonUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=100';
+ const allPokemonUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=16';
  this.httpClient.get<any>(allPokemonUrl).pipe(
   map(value => value.results),
   map((value:any)=>{
@@ -22,6 +22,7 @@ constructor(private httpClient: HttpClient,)
   ).subscribe((result:any) => {
     const pokemon: Pokemon = {
       image: result.sprites.front_default,
+      // image: result.sprites.other.dream_world.front_default,
       number: result.id,
       name: result.name,
       types: result.types.map((t: { type: { name: any; }; }) => t.type.name),

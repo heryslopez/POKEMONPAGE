@@ -1,0 +1,58 @@
+.pokedex-pokemon-profile {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    margin-right: -100%;
+    width: 50%;
+    
+}
+.push-7 {
+	margin-left: 50.7825%;
+}
+.column-6 {
+	float: left;
+	margin-right: -100%;
+	width: 41.96%;
+}
+.color-bg.color-lightblue {
+	background-color: #30a7d7;
+	color: #fff;
+}
+.pokedex-pokemon-details-right .pokemon-ability-info, .pokedex-pokemon-details-right .pokemon-ability-info-detail {
+	border-radius: 10px;
+	display: block;
+	float: left;
+	min-height: 100px;
+	position: relative;
+	width: 100%;
+}
+.pokedex-pokemon-details-right .pokemon-ability-info .attribute-title {
+	font-family: "Flexo-Medium",arial,sans-serif;
+	clear: both;
+	color: #fff;
+	float: left;
+	font-size: 100%;
+	margin: 1.25em 0 0 1.25em;
+	text-transform: none;
+	white-space: normal;
+	word-break: break-word;
+}
+.pokedex-pokemon-details-right .pokemon-ability-info .attribute-value {
+	font-family: "Flexo-Medium",arial,sans-serif;
+	clear: both;
+	color: #212121;
+	float: left;
+	font-size: 125%;
+	margin: 0.75em 1.5em 0 1em;
+	white-space: normal;
+	word-break: break-word;
+}
+.column-7 {
+	float: left;
+	margin-right: -100%;
+	width: 49.22%;
+}
+ol, ul {
+	list-style: none;
+}
