@@ -1,7 +1,7 @@
-<div class="container" style="margin-top: 8vw;">
-    <div class="pokedex-pokemon-profile">
-        <!-- <img class="pokemon-images" [src]="pokemon.image" alt="pokemo-image"> -->
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="">
+<div class="container" style="margin-top: 8vw;" *ngFor="let pokemon of pokemonService.pokemons">
+    <div class="pokedex-pokemon-profile" *ngIf="pokemon">
+        <img class="pokemon-images" [src]="pokemon.image" alt="pokemo-image" style="  width: 100%; height: 100%;">
+        <!-- <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt=""> -->
     </div>
     <!-- <div class="pokedex-pokemon-details-right"> -->
     <div class="column-6 push-7">
@@ -14,15 +14,6 @@
                     Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola.
                 </p>
             </div>
-            <h3 data-gtm-vis-first-on-screen-159551_82="768" data-gtm-vis-first-on-screen-159551_85="769"
-                data-gtm-vis-recent-on-screen-159551_82="24665338" data-gtm-vis-total-visible-time-159551_82="3000"
-                data-gtm-vis-recent-on-screen-159551_85="24665339" data-gtm-vis-total-visible-time-159551_85="3000"
-                data-gtm-vis-has-fired-159551_82="1" data-gtm-vis-has-fired-159551_85="1">Versiones:</h3>
-            <div class="version-labels">
-                <span class="version-label version-x active"><i class="icon icon_pokeball"></i></span>
-                <span class="version-label version-y"><i class="icon icon_pokeball"></i></span>
-            </div>
-
             <div class="info match-height-tablet">
                 <div class="pokemon-ability-info color-bg color-lightblue match active">
                     <div class="column-7">
@@ -35,16 +26,6 @@
                             <li>
                                 <span class="attribute-title">Peso</span>
                                 <span class="attribute-value">8,5 kg</span>
-                            </li>
-
-                            <li>
-                                <span class="attribute-title">Sexo</span>
-
-                                <span class="attribute-value">
-                                    <i class="icon icon_male_symbol"></i>
-                                    <i class="icon icon_female_symbol"></i>
-                                </span>
-
                             </li>
                         </ul>
                     </div>

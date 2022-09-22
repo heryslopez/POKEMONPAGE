@@ -9,7 +9,7 @@ import { Pokemon } from 'src/_model/Pokemon';
 })
 export class PokemonDetailsComponent{
   public pokemons: Pokemon[] = [
-
+    
   ];
   constructor(
     public pokemonService: PokemonService,
